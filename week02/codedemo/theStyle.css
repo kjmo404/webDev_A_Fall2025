@@ -1,0 +1,28 @@
+
+			h1 {
+				color: #FF4500
+			}
+
+			body {
+				background: #000080;
+			}
+
+            p {
+                background-color:darkorchid;
+                color:white;
+                border: solid 10px;
+                padding:4vw;
+            }
+
+            #theSpecial{
+                color:darkslateblue;
+                background-color: aquamarine;
+                padding: 10vw;
+
+            }
+
+
+            .theDescription{
+                background-color: green;
+                margin:50px;
+            }
