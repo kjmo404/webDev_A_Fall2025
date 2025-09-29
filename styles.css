@@ -1,0 +1,55 @@
+
+body{
+    background-image:  url('https://i.pinimg.com/1200x/08/7b/66/087b66fcfcc51ff5133ebb7341957a26.jpg');
+
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* menu{
+    list-style-type: none;
+    display:flex; 
+    padding:0; 
+    margin-bottom: 0;
+    gap: 1px;} */
+
+
+details{
+ justify-content:center; 
+ align-items: center;
+ align-content:center; 
+ text-align: center;
+ font-weight:bold; 
+ font-size: 45px;
+ background-color: white;
+ width:500px;
+ align-self: center;
+ place-self: center;
+ align-content: center; 
+ 
+
+}
+summary{
+ background-color: white;
+ font-size: 20px;
+}
+li{
+    font-size:20px;
+    margin:20px; 
+    text-align:left;
+
+}
+
+.welcome_box{
+    align-self: center;
+    place-self: center;
+    align-content: center; 
+    width: 550px; 
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 15px; 
+    background-color: white;
+}
