@@ -21,31 +21,42 @@ details{
     background-color: white;
     width: 550px;
 }
+
 a{
     color: #702963;
     font-family: 'Times New Roman', Times, serif;
 } 
+
 #button_link{
     color:white;
 }
 summary{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-ul{margin:20px;  
+ul{
+    margin:20px;  
     text-align:center;
     font-size: 15px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 li{ 
     margin:20px; 
     text-align:left;
 }
 
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 20px;
+}
 
 blockquote{
     background-color: #B1B7E1;
     font-family: 'Times New Roman', Times, serif;
     font-size:20px;
 }
+
 button{
   border: 0;
   line-height: 2.5;
