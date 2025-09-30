@@ -1,0 +1,109 @@
+body{
+    background-image: url('https://i.pinimg.com/originals/41/72/ab/4172ab9e2a618a5f12d1c30a3e709d6e.gif');
+    font-family: "Pixelify Sans", sans-serif;
+  }
+  
+/* w3schools */
+/* Navbar container */
+
+.topnav { 
+  width:1700px;
+  height:50px;
+  overflow: hidden;
+  background-color: #fdf2e8;
+ 
+}
+
+/* Links inside the navbar */
+.topnav a {
+  float: left;
+  font-size: 16px;
+  color: #b3a7f9 ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #b3a7f9;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #c7b7fb;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#fee5e9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #b3a7f9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f9dbeb;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+h3{
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size:20px;
+
+}
+details{
+  background-color: #fdf2e8;
+  width: 650px;
+  height:fit-content;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  display:grid;
+  place-self: center;
+  
+}
+blockquote{
+  background-color: #b3a7f9;
+  border-radius: 10px;
+}
+li{
+  text-align: center;
+}
+a{
+    text-decoration: none;
+}
