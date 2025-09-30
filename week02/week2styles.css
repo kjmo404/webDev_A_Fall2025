@@ -1,87 +1,110 @@
-
 body{
-    background-color: #CCCCFF;
+    background-image: url('https://i.pinimg.com/originals/41/72/ab/4172ab9e2a618a5f12d1c30a3e709d6e.gif');
+    font-family: "Pixelify Sans", sans-serif;
+  }
+
+/* w3schools */
+/* Navbar container */
+
+.topnav { 
+  width:1700px;
+  height:50px;
+  overflow: hidden;
+  background-color: #fdf2e8;
+ 
 }
-/* code{
-    background-color:#B1B7E1;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 0 3px;
-} */
+
+/* Links inside the navbar */
+.topnav a {
+  float: left;
+  font-size: 16px;
+  color: #b3a7f9 ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #b3a7f9;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #c7b7fb;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#fee5e9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #b3a7f9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f9dbeb;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.VIP{
+
+  width:250px;
+  height:150px;
+  border: 5px #f3c4e0 dotted;
+  margin-top: 10px;
+  display:grid;
+  place-self: center;
+ 
+}
 
 details{
-    align-self: center;
-    place-self: center;
-    align-content: center; 
-    align-items: center;
-    align-content:center; 
-    text-align: center;
-    font-weight:bold; 
-    font-size:20px; 
-    background-color: white;
-    width: 550px;
-}
-
-a{
-    color: #702963;
-    font-family: 'Times New Roman', Times, serif;
-} 
-
-#button_link{
-    color:white;
-}
-summary{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-ul{
-    margin:20px;  
-    text-align:center;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-li{ 
-    margin:20px; 
-    text-align:left;
-}
-
-h3{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    font-size: 20px;
-}
-
-blockquote{
-    background-color: #B1B7E1;
-    font-family: 'Times New Roman', Times, serif;
-    font-size:20px;
-}
-
-button{
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
+  background-color: #fdf2e8;
+  width: 650px;
   text-align: center;
-  text-shadow: 1px 1px 1px black;
-  border-radius: 10px;
-  background-color: #CF9FFF;
-
-  box-shadow:  
-  inset 2px 2px 3px rgb(255 255 255 / 0.6),
-  inset -2px -2px 3px rgb(0 0 0 / 0.6);;
+  display:grid;
+  place-self: center;
 }
-
-button:hover{
-     background-color: violet;
+blockquote{
+  background-color: #b3a7f9;
 }
+li{
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 
-img{
-    align-self: center;
-    place-self: center;
-    align-content: center; 
-    align-items: center;
-    align-content:center; 
-    text-align: center;
-   width: 200px; height: 300px'
 }
