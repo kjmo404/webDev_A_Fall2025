@@ -7,7 +7,7 @@ body{
 /* Navbar container */
 
 .topnav { 
-  width:1700px;
+  width:100%;
   height:50px;
   overflow: hidden;
   background-color: #fdf2e8;
@@ -92,8 +92,10 @@ details{
   background-color: #fdf2e8;
   width: 650px;
   height:fit-content;
+  border: 5px #f3c4e0 dotted;
   border-radius: 10px;
   margin-bottom: 10px;
+  font-size: 20px;
 
   text-align: center;
   display:grid;
@@ -106,6 +108,7 @@ blockquote{
 }
 li{
   text-align: center;
+  margin: 5px; 
 }
 a{
     text-decoration: none;
@@ -115,5 +118,5 @@ h3{
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size:20px;
+  font-size:25px;
 }
