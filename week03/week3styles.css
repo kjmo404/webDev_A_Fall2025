@@ -88,6 +88,8 @@ body{
 }
 
 .animation-container {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   padding: 48px;
   height: auto;

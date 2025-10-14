@@ -1,8 +1,18 @@
 body{
-    background-image: url('https://i.pinimg.com/originals/41/72/ab/4172ab9e2a618a5f12d1c30a3e709d6e.gif');
+    background-color:  #EBDCC5 ;
     font-family: "Pixelify Sans", sans-serif;
   }
   
+/* linen - #EBDCC5 */
+/* blush - #E5AA7B */
+/* tan - #A9835C */
+/* rust - #7E3717 */
+/* leather - #3F1816 */
+/* gum - #5D6737 */
+/* forest = #222918 */
+/* sky - #90A3AF */
+/* ocean - #003F50 */
+
 /* w3schools */
 /* Navbar container */
 
@@ -10,7 +20,8 @@ body{
   width:1700px;
   height:50px;
   overflow: hidden;
-  background-color: #fdf2e8;
+  background-color: #EBDCC5 ;
+  /* background-color: #fdf2e8; */
  
 }
 
@@ -18,7 +29,8 @@ body{
 .topnav a {
   float: left;
   font-size: 16px;
-  color: #b3a7f9 ;
+   color: #3F1816 ;
+  /* color: #b3a7f9 ; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,7 +48,7 @@ body{
   font-size: 16px;
   border: none;
   outline: none;
-  color: #b3a7f9;
+  color: #3F1816;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -45,14 +57,14 @@ body{
 
 /* Add a red background color to navbar links on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #c7b7fb;
+  background-color: #A9835C;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:#fee5e9;
+  background-color:#90A3AF;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -61,7 +73,7 @@ body{
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: #b3a7f9;
+  color: #EBDCC5;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -70,10 +82,85 @@ body{
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f9dbeb;
+  background-color: #003F50;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+h1,
+p {
+  margin: 0 0 1em 0;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 20px;
+ /* display: grid;*/
+  grid-gap: 10px;
+}
+
+
+/* no grid support? */
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.panel {
+  /* needed for the flex layout*/
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+.tall-panel {
+  grid-row-end: span 2;
+}
+
+.header,
+.footer {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+}
+
+.wrapper > * {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+
+/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+
+@supports (display: grid) {
+  .wrapper > * {
+    margin: 0;
+  }
 }
