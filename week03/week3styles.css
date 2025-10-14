@@ -1,5 +1,5 @@
 body{
-    background-image: url('https://i.pinimg.com/originals/41/72/ab/4172ab9e2a618a5f12d1c30a3e709d6e.gif');
+    background-color: #04152d;
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -10,15 +10,25 @@ body{
   width:100%;
   height:50px;
   overflow: hidden;
-  background-color: #fdf2e8;
+  background-color:#04152d;
  
 }
 
+
+/* deep koamaru = #22117d */
+/* electric violet = #7322ec */
+/* blue gem = #510fc3 */
+/* shamrock = #23cf9e */
+/* #04152d = Black Pearl */
+/* #2392b7 = Eastern Blue */
+/* #3b74ce = Mariner */
+/* #4ebfb4 = Fountain Blue */
+/* #022522= Holly */
 /* Links inside the navbar */
 .topnav a {
   float: left;
   font-size: 16px;
-  color: #b3a7f9 ;
+  color:#43bfb4 ;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -35,7 +45,7 @@ body{
   font-size: 16px;
   border: none;
   outline: none;
-  color: #b3a7f9;
+  color: #4ebfb4;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -44,14 +54,14 @@ body{
 
 /* Add a red background color to navbar links on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #c7b7fb;
+  background-color: #2392b7;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:#fee5e9;
+  background-color:#022522;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -60,7 +70,7 @@ body{
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: #b3a7f9;
+  color: #4ebfb4;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -69,10 +79,140 @@ body{
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f9dbeb;
+  background-color: #23cf9e;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.animation-container {
+  position: relative;
+  padding: 48px;
+  height: auto;
+  overflow: hidden;
+  font-family: "Fjalla One", sans-serif;
+  font-size:100px;
+}
+
+/* STAIRCASE TEXT */
+.staircase-text {
+  position: relative;
+}
+
+.word {
+  display: block;
+  position: relative;
+  animation: slideIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* Animate each word with increasing delay and left offset */
+.word:nth-child(1) {
+  animation-delay: 0.2s;
+  left: 0px;
+}
+.word:nth-child(2) {
+  animation-delay: 0.4s;
+  left: 20px;
+}
+.word:nth-child(3) {
+  animation-delay: 0.6s;
+  left: 40px;
+}
+.word:nth-child(4) {
+  animation-delay: 0.8s;
+  left: 60px;
+}
+.word:nth-child(5) {
+  animation-delay: 1s;
+  left: 80px;
+}
+
+/* Keyframes for staircase appearance */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* REMOVE spacing from h3 */
+.word h3 {
+  margin: 0;
+  font-size: 100px;
+  color:white;
+}
+
+/* CUTTING WORD ("MASSAGE") */
+.quick {
+  font-family:"Oswald", sans-serif;
+  top: 525px; 
+  left: 120px;   
+  font-size: 100px;
+  font-stretch: expanded;
+  font-weight: bold;
+  background-color:#04152d;
+  color: #2392b7; /* Easterner Blue */
+  position: absolute;
+  opacity: 0;
+  animation: cutIn 0.6s ease-out 1.9s forwards;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Cut-in animation */
+@keyframes cutIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.box {
+  position:absolute;
+  top:110px;
+  left:45%;
+  width: 45%;
+  height: 75%;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+.box2 {
+  position:absolute;
+  width: 95%;
+  height: 95%;
+  background-color: #2392b7;
+  padding: 10px;
+  margin: 15px; 
+}
+h1{
+   font-family:"Oswald", sans-serif;
+  color:#04152d;
+  margin:20px;
+}
+p{
+    margin:20px;
+    font-family:"Fjalla One", sans-serif;
+    color:#04152d;
+    top:2%;
+
+   
+}
+blockquote{
+  /* background-color: ; */
+  font-family:"Fjalla One", sans-serif;
+  color:white ;
+  margin-left:40px;
+  margin-right:40px;
 }

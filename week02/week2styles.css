@@ -120,3 +120,16 @@ h3{
   font-style: normal;
   font-size:25px;
 }
+summary{
+    text-align: left;
+    text-decoration: none;
+    background-color: #fdf2e8;
+    color:#b3a7f9;
+}
+details summary::marker,
+:is(::-webkit-details-marker) {
+    text-align: left;
+    content: " x -  "; 
+    font-size: 20px;
+   
+}

@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    display:flex;
+    justify-content: center;
+}
+header {
+        
+       width: 100px; /* Set equal width and height */
+      height: 100px;
+      margin-left: 35px;
+      background-color: orangered; /* Optional: fill with a color */
+      border-radius: 50%;/* Essential for creating the circle */
+     border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+      /* Optional: Add a border for an outline */
+      /* border: 2px solid darkblue; */
+}
+
+div {
+
+    font-family: "Bodoni Moda", serif;
+    font-size: 36px;
+    padding: 3vw;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* position: absolute; */
+  
+}
+
+
+p {
+  
+    margin:1vw; 
+    text-align:left;
+  
+}
