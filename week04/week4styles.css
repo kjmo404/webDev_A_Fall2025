@@ -21,6 +21,7 @@ body{
   height:50px;
   overflow: hidden;
   background-color: #EBDCC5 ;
+  margin-bottom: 20px;
   /* background-color: #fdf2e8; */
  
 }
@@ -91,9 +92,7 @@ body{
 }
 
 
-
-
-
+/* grid by example */
 *,
 *:before,
 *:after {
@@ -106,20 +105,26 @@ p {
   margin: 0 0 1em 0;
 }
 
+
 .wrapper {
-  max-width: 940px;
+  max-width: 1000px;
   margin: 0 20px;
  /* display: grid;*/
   grid-gap: 10px;
 }
 
 
+
+
 /* no grid support? */
+
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+
 }
+
 
 .wrapper {
   display: grid;
@@ -128,27 +133,33 @@ p {
   grid-auto-rows: minmax(150px, auto);
 }
 
+
 .panel {
   /* needed for the flex layout*/
   margin-left: 5px;
   margin-right: 5px;
   flex: 1 1 200px;
+  position: relative;
+  overflow: hidden;
 }
+
 
 .tall-panel {
   grid-row-end: span 2;
 }
 
-.header,
-.footer {
-  margin-left: 5px;
-  margin-right: 5px;
-  flex: 0 1 100%;
-  grid-column: 1 / -1;
+
+.wide{
+  grid-column-end: span 2;
 }
 
+.header{
+  text-align: center;
+}
+
+
 .wrapper > * {
-  background-color: #444;
+  background-color: #A9835C;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -156,11 +167,146 @@ p {
   margin-bottom: 10px;
 }
 
+.footer {
+  text-align:center;
+  background-color: #3F1816;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+  font-family: "Brygada 1918", serif;
+}
+
+ul{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+li{
+  font-size:15px;
+  margin:7px;
+}
 
 /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+
 
 @supports (display: grid) {
   .wrapper > * {
     margin: 0;
   }
+}
+
+
+/* .panel img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+} */
+
+.imgcontained{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imgcontained img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.imgcontained::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; 
+}
+
+
+.imgcontained:hover::after {
+  opacity: 1;
+}
+
+
+/* uiverse.io */
+button {
+ position: relative;
+ overflow: hidden;
+ border: 1px solid #18181a;
+ color: #18181a;
+ font-size: 25px;
+font-family: "Brygada 1918", serif;
+ padding: 18px 18px 17px;
+ display: inline-block;
+ text-decoration: none;
+ cursor: pointer;
+ background: #fff;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ text-align: center;
+}
+
+button span:first-child {
+ position: relative;
+ transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 10;
+}
+
+button span:last-child {
+ color: white;
+ display: block;
+ position: absolute;
+ bottom: 0;
+ transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 100;
+ opacity: 0;
+ top: 50%;
+ left: 50%;
+ transform: translateY(225%) translateX(-50%);
+ height: 25px;
+ line-height: 24px;
+}
+
+button:after {
+ content: "";
+ position: absolute;
+ bottom: -50%;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #3F1816;
+ transform-origin: bottom center;
+ transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ transform: skewY(9.3deg) scaleY(0);
+ z-index: 50;
+}
+
+button:hover:after {
+ transform-origin: bottom center;
+ transform: skewY(9.3deg) scaleY(2);
+}
+
+
+button:hover span:last-child {
+ transform: translateX(-50%) translateY(-50%);
+ opacity: 1;
+ transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}  
+
+
+ 
+a{
+  text-decoration:none;
+  color:#EBDCC5;
 }
