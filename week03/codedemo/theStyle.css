@@ -5,32 +5,88 @@ body {
 }
 
 main{
-    background-color: lightgreen;
+    /* background-color: lightgreen;
     display: flex;
     justify-content: center;
-    border: 3px solid;
-    
+    border: 3px solid; */
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
 }
 
 div {
-    padding: 3vw;
+    /* padding: 3vw;
     margin: 3vw;
-    font-size: 20vw;
-  
+    font-size: 20vw; */
+  display: flex;
+    position: absolute;
+    transform: scaleY(1.5);
+    color: black;
+    z-index: 2;
+    flex-direction: row;
+    align-items: start;
+    gap: 1vw;
+    font-size: 350;
+    font-weight: 900;
+    line-height: 0.1;
 }
 #theBackward{
-    transform: rotate(90deg);
+    /* transform: rotate(90deg);
+    color: rgb(255,255,255); */
+   position: absolute;
+    transform: scaleX(1.5) rotate(90deg);
     color: rgb(255,255,255);
-  
+    z-index: 1
+}
+
+p{
+  position: absolute;
 }
 
 
-#theBackward:nth-child(1){
-    position:absolute; 
-    display: flex;
-    /* flex-direction:row; */
-    /* align-content:space-around;
-    justify-content:space-around; */
-    
-    
+ p:nth-child(1){
+  top: -400px;
+  left: -250px;
+} 
+p:nth-child(2){
+  top: -320px;
+  left: -80px;
 }
+p:nth-child(3){
+  top: -460px;
+  left: 70;
+}
+p:nth-child(4){
+  top: -240px;
+  left: 200px;
+}
+#theBackward p:nth-child(1){
+  top: -455px;
+  left: -370px;
+} 
+#theBackward p:nth-child(2){
+  top: -350px;
+  left: -200px;
+} 
+#theBackward p:nth-child(3){
+  top: -440px;
+  left: -50px;
+} 
+#theBackward p:nth-child(4){
+  top: -350px;
+  left: 140px;
+} 
+
+             /* <p style="top:-400px;left:-160px">D</p>
+            <p style="top:-320px;left:-50px">A</p>
+            <p style="top:-460px;left:50px">D</p>
+            <p style="top:-240px;left:150px">A</p>
+          </div>
+          
+          <div id="theBackward"> 
+            <p style="top:-455px;left:-370px">D</p>
+            <p style="top:-350px;left:-200px">A</p>
+           <p style="top:-440px;left:-50px">D</p>
+           <p style="top:-350px;left:140px">A</p> */
