@@ -1,0 +1,61 @@
+
+/* https://stackoverflow.com/questions/46949940/css-animate-object-in-curved-path */
+/* https://javascript.plainenglish.io/7-css-gradient-background-animations-that-wow-users-7bc8583955c7 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+ background: radial-gradient(white, lightyellow, lightsalmon, salmon , cadetblue);
+     animation: gradient 6s ease infinite;
+  
+}
+
+
+
+@keyframes gradient {
+  0% { background-position: 50% 50%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 50% 50%; }
+}
+
+
+
+
+p {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  animation: effect 8s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0px 150px;
+  transform-style: flat;
+  font-family: "Tangerine", cursive;
+  font-size: 42px;
+  font-weight: 700;
+  color: black;
+}
+.header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: black;
+}
