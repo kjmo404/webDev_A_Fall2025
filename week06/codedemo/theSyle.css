@@ -3,7 +3,11 @@ body {
   
 }
 
-main {
+#canvas{
+    width: 200px;
+    height: 200px;  
+}
+/* main {
     display: flex;
     flex-direction: column;
     margin: 50px;
@@ -12,4 +16,4 @@ main {
 button {
     border-radius: 40px;
     margin: 50px;
-}
+} */

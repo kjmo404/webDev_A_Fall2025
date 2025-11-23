@@ -1,0 +1,281 @@
+
+body {
+text-align: center;
+vertical-align: center;
+margin: 20px 10px 0;
+background-color: #31313B;
+}
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+
+
+.wifi-symbol {
+display: none;
+}
+.wifi-symbol[foo],
+.wifi-symbol {
+display: block;
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 150px;
+height: 150px;
+margin-top: -187.5px;
+-ms-transform: rotate(-45deg) translate(-100px);
+-moz-transform: rotate(-45deg) translate(-100px);
+-o-transform: rotate(-45deg) translate(-100px);
+-webkit-transform: rotate(-45deg) translate(-100px);
+transform: rotate(-45deg) translate(-100px);
+}
+.wifi-symbol .wifi-circle {
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+display: block;
+width: 100%;
+height: 100%;
+font-size: 21.43px;
+position: absolute;
+bottom: 0;
+left: 0;
+border-color: #FFFFCC;
+border-style: solid;
+border-width: 1em 1em 0 0;
+-webkit-border-radius: 0 100% 0 0;
+border-radius: 0 100% 0 0;
+opacity: 0;
+-o-animation: wifianimation 3s infinite;
+-moz-animation: wifianimation 3s infinite;
+-webkit-animation: wifianimation 3s infinite;
+animation: wifianimation 3s infinite;
+}
+.wifi-symbol .wifi-circle.first {
+-o-animation-delay: 800ms;
+-moz-animation-delay: 800ms;
+-webkit-animation-delay: 800ms;
+animation-delay: 800ms;
+}
+.wifi-symbol .wifi-circle.second {
+width: 5em;
+height: 5em;
+-o-animation-delay: 400ms;
+-moz-animation-delay: 400ms;
+-webkit-animation-delay: 400ms;
+animation-delay: 400ms;
+}
+.wifi-symbol .wifi-circle.third {
+width: 3em;
+height: 3em;
+}
+.wifi-symbol .wifi-circle.fourth {
+width: 1em;
+height: 1em;
+opacity: 1;
+background-color: #FFFFCC;
+-o-animation: none;
+-moz-animation: none;
+-webkit-animation: none;
+animation: none;
+}
+@-o-keyframes wifianimation {
+0% { opacity: 0.4; }
+5% { opacity: 1; }
+6% { opacity: 0.1; }
+100% { opacity: 0.1; }
+}
+@-moz-keyframes wifianimation {
+0% { opacity: 0.4; }
+5% { opacity: 1; }
+6% { opacity: 0.1; }
+100% { opacity: 0.1; }
+}
+@-webkit-keyframes wifianimation {
+0% { opacity: 0.4; }
+5% { opacity: 1; }
+6% { opacity: 0.1; }
+100% { opacity: 0.1; }
+}
+@keyframes wifianimation {
+0% { opacity: 0.4; }
+5% { opacity: 1; }
+6% { opacity: 0.1; }
+100% { opacity: 0.1; }
+}
+
+.left-animation{
+  rotate: (90deg);
+  left:-10%
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+    margin: 0;
+}
+
+/* Smartphone styling */
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    background: #000;
+    border: 16px solid #333;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.smartphone.vibrating {
+    animation: vibrate 0.3s infinite;
+}
+
+.smartphone .content {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    overflow: auto;
+}
+
+.smartphone.active .content {
+    opacity: 1;
+    background: #1a1a1a;
+}
+
+/* Left wifi animation */
+.left-animation {
+    position: absolute;
+    left: calc(50% - 250px);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.left-animation.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Right wifi animation */
+.right-animation {
+    position: absolute;
+    right: calc(50% - 250px);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.right-animation.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Wifi symbol styling */
+.wifi-symbol {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+.wifi-symbol .wifi-circle {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: #FFFFCC;
+    border-style: solid;
+    border-width: 1em 1em 0 0;
+    border-radius: 100% 0 0;
+    opacity: 0;
+    animation: wifianimation 3s infinite;
+}
+
+.wifi-symbol .wifi-circle.first {
+    animation-delay: 800ms;
+}
+
+.wifi-symbol .wifi-circle.second {
+    width: 5em;
+    height: 5em;
+    animation-delay: 400ms;
+}
+
+.wifi-symbol .wifi-circle.third {
+    width: 3em;
+    height: 3em;
+    animation-delay: 0ms;
+}
+
+/* Animations */
+@keyframes wifianimation {
+    0% {
+        opacity: 0.4;
+    }
+    5% {
+        opacity: 1;
+    }
+    6% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes vibrate {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-1deg); }
+    75% { transform: translateX(5px) rotate(1deg); }
+}
