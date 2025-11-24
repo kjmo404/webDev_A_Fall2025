@@ -1,0 +1,79 @@
+body {
+  color: white;
+  background-image: url(https://i.insider.com/56e9d825dd08955e388b4635?width=960&format=jpeg);
+  font-family: monospace;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+/* glitch animation https://codepen.io/cubeghost/pen/pveWVV */
+@keyframes wiggle {
+    0% { transform: skewX(24deg); } 
+    10% { transform: skewX(-8deg); }
+    20% { transform: skewX(55deg); }
+    30% { transform: skewX(-90deg); }
+    40% { transform: skewX(29deg); }
+    50% { transform: skewX(-90deg); }
+    60% { transform: skewX(3deg); }
+    70% { transform: skewX(-2deg); }
+    80% { transform: skewX(1deg); }
+    90% { transform: skewX(10deg); }
+    100% { transform: skewX(0deg); }
+}
+
+* {padding:0;margin:0;}
+
+html {width:100%;height:100%;}
+
+
+header {
+  display:flex;
+}
+
+header:hover {
+  animation: wiggle 0.4s ;
+}
+
+h1 {
+  position:relative;
+  font-family:'Science Gothic',sans-serif;
+  font-weight:normal;
+  font-size:60px;
+  text-align:center;
+  cursor:pointer;
+  color:rgba(255,255,255,0.95);
+  text-shadow:1px 1px rgba(246, 0, 153,0.8),
+             -1px -1px rgba(15, 210, 255,0.8),
+             -1px 0px rgba(255, 210, 0, 1);
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+h1:hover {
+  animation: wiggle 0.2s infinite;
+  /*transition:all ease-out 0.1s;*/
+  text-shadow:30px 13px rgba(246, 0, 153,0.8),
+             -38px -4px rgba(15, 210, 255,0.8),
+             -2px -4px rgba(255, 210, 0, 1);
+
+}
+blockquote{
+    background-color: black;
+    color:white;
+    font-size: 35px;
+    margin: 5%;
+    border-radius: 5px;
+}
+
+blockquote:hover{
+    animation: wiggle 0.2s infinite;
+  /*transition:all ease-out 0.1s;*/
+  text-shadow:30px 13px rgba(246, 0, 153,0.8),
+             -38px -4px rgba(15, 210, 255,0.8),
+             -2px -4px rgba(255, 210, 0, 1);
+}
