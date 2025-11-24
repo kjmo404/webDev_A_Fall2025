@@ -43,7 +43,7 @@ h1 {
   position:relative;
   font-family:'Science Gothic',sans-serif;
   font-weight:normal;
-  font-size:60px;
+  font: size 50px;
   text-align:center;
   cursor:pointer;
   color:rgba(255,255,255,0.95);
@@ -64,14 +64,27 @@ h1:hover {
 }
 blockquote{
     background-color: black;
-    color:white;
-    font-size: 35px;
+    font-size: 25px;
     margin: 5%;
     border-radius: 5px;
 }
 
 blockquote:hover{
     animation: wiggle 0.2s infinite;
+  /*transition:all ease-out 0.1s;*/
+  text-shadow:30px 13px rgba(246, 0, 153,0.8),
+             -38px -4px rgba(15, 210, 255,0.8),
+             -2px -4px rgba(255, 210, 0, 1);
+}
+p{
+    background-color: black;
+    margin:5%;
+    font-size:20px;
+    border-radius: 5px;
+
+}
+p:hover{
+animation: wiggle 0.2s infinite;
   /*transition:all ease-out 0.1s;*/
   text-shadow:30px 13px rgba(246, 0, 153,0.8),
              -38px -4px rgba(15, 210, 255,0.8),
