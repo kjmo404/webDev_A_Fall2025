@@ -155,6 +155,7 @@ li:hover::before {
 
 a{
   color:white;
+  text-decoration: none;
 }
 /* carousel container */
 /* =============
