@@ -1,5 +1,5 @@
 body {
-  background: #f2f2f2;
+  background:darkred;
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -22,10 +22,77 @@ body {
 .smartphone .content {
   width: 100%;
   height: 100%;
-  background: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   box-sizing: border-box;
+  color: red;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  white-space: pre-line;
+  background: black;       
+  visibility: hidden;      
 }
 
-/* vibration animation */
+/* text visible when hovered */
+.smartphone:hover .content {
+  visibility: visible;
+}
+
+/* glow pulse animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+    background-color: black;
+  }
+  50% {
+    box-shadow: 0 0 40px 15px rgba(255, 0, 0, 0.7);
+    background-color: black;
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+    background-color: black;
+  }
+}
+
+/* apply glow pulse when active */
+.content.glow {
+  animation: glowPulse 0.5s infinite;
+}
+
+
+
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  background: #000;
+  animation: vibrate 0.5s infinite;
+}
+.smartphone:hover{
+animation-play-state: paused;
+}
+
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+
