@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Midnight Patch - Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap" rel="stylesheet">
+    <link href="fpstyles.css" rel="stylesheet" />
+    <script src="fpscript.js" defer></script>
+</head>
+<body>
+    <!-- Title Screen -->
+    <div class="page active" id="titlescreen">
+        <h1>THE MIDNIGHT PATCH</h1>
+        <button class="startbutton" id="start">START</button>
+    </div>
+
+    <!-- Boot Screen -->
+    <div class="page" id="bootScreen">
+        <p class="loadtext1">
+            PhoenixBIOS 4.0 Release 6.0<br>
+            Copyright 1985-1999 Phoenix Technologies Ltd.<br>
+            All Rights Reserved.<br>
+            Copyright 1996-1999 Intel Corporation.<br>
+            4S4EB2X0.10A.0026.P08
+        </p>
+        <p class="loadtext2">
+            Dell Dimension XPS T500<br>
+            BIOS Version A07<br>
+            Intel(R) Pentium(R) III processor 500 MHZ<br>
+            96MB System RAM Passed
+        </p>
+        <p class="loadtext3">
+            Keyboard .......... Detected<br>
+            Mouse ............. Detected
+        </p>
+        <p class="loadtext4">
+            Fixed Disk 0: WDC WD400BB-23JHA1-(PM)<br>
+            ATAPI CD-ROM: CRD-8488C-(SM)
+        </p>
+    </div>
+
+    <!-- Canvas Desktop -->
+    <canvas id="desktopCanvas"></canvas>
+    <!-- Taskbar -->
+    <div id="taskbar" style="display:none;">
+    <div id="taskbar-windows"></div>
+    <div id="clock"></div>
+</div>
+</body>
+</html>

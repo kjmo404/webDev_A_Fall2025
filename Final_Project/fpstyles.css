@@ -1,0 +1,112 @@
+/* Body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "VT323", monospace;
+    background: #000; /* Ensure black background to prevent white flash */
+    transition: background 0.2s ease;
+}
+
+/* Pages */
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #0f0;
+    background: #000;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Title screen */
+#titlescreen h1 {
+    font-family: 'DotGothic16', monospace;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+/* Title screen start button */
+.startbutton, .help {
+    font-family: 'VT323', monospace;
+    font-size: 28px;
+    color: #0f0;
+    background: transparent;
+    border: 2px solid #0f0;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.startbutton:hover, .help:hover {
+    background: #0f0;
+    color: #000;
+}
+
+/* Boot screen left aligned */
+#bootScreen {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+/* Desktop Canvas */
+canvas#desktopCanvas {
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+/* Taskbar */
+#taskbar {
+    display: none; /* Hidden until desktop loads */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, #c0c0c0, #808080);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #404040;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-family: "VT323", monospace;
+    z-index: 1000;
+}
+
+#taskbar-windows {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#clock {
+    font-size: 16px;
+    color: #000;
+    margin-left: auto;
+    user-select: none;
+}
+
+/* Puzzle Card */
+.card {
+    background: #111;
+    color: #0f0;
+    border: 2px solid #0f0;
+    padding: 20px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 10;
+}
